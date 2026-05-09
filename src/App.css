@@ -123,7 +123,7 @@ button {
   }
 
   .card {
-    width: 90%;        /* ✅ max-width → width aakki */
+    width: 90%;        /* max-width → width aakki */
   }
 
   h2 {
@@ -141,6 +141,7 @@ button {
     width: 95%;
   }
 }
+
 
 /* ========================= */
 /* 📲 TABLET (577px - 992px) */

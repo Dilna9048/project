@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const { login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
-  const navigate = useNavigate();   // ✅ add this
+  const navigate = useNavigate();   // add this
 
   const handleSubmit = (e) => {
     e.preventDefault();
     login({ email });
 
-    // ✅ redirect to home
+    //  redirect to home
     navigate("/");
   };
 

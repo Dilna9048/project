@@ -8,6 +8,7 @@ import MyBookings from "./pages/MyBookings";
 
 
 
+
 const App = () => {
   return (
     <>
@@ -18,6 +19,9 @@ const App = () => {
         
          <Route path="/booking/:title/:price" element={<Booking />} />
         <Route path="/my-bookings" element={<MyBookings />} />
+        
+
+
         
 
       </Routes>

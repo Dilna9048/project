@@ -6,7 +6,7 @@ const Booking = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [booked, setBooked] = useState(false);
 
-  const seats = Array.from({ length: 30 }, (_, i) => i + 1);
+  const seats = Array.from({ length: 100 }, (_, i) => i + 1);
 
   const toggleSeat = (seat) => {
     if (selectedSeats.includes(seat)) {
@@ -18,7 +18,7 @@ const Booking = () => {
 
   const handleBooking = () => {
     if (selectedSeats.length === 0) {
-      alert("Please select at least one seat 😄");
+      alert("Please select at least one seat ");
       return;
     }
 
@@ -28,7 +28,7 @@ const Booking = () => {
       total: selectedSeats.length * Number(price),
     };
 
-    // ✅ Save to localStorage
+    //  Save to localStorage
     localStorage.setItem("booking", JSON.stringify(bookingData));
 
     setBooked(true);
